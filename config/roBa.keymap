@@ -75,11 +75,6 @@
             bindings = <&ramdafn>;
             key-positions = <5 6>;
         };
-
-        comment {
-            bindings = <&kp LG(SLASH)>;
-            key-positions = <32 33>;
-        };
     };
 
     macros {
