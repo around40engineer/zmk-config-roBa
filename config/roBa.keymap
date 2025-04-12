@@ -40,6 +40,41 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        backSpace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <18 19>;
+        };
+
+        importSaitekika {
+            bindings = <&kp LC(LA(O))>;
+            key-positions = <7 8>;
+        };
+
+        MB3 {
+            bindings = <&mkp MB3>;
+            key-positions = <15 27>;
+        };
+
+        codeSeikei {
+            bindings = <&kp LG(LA(L))>;
+            key-positions = <19 20>;
+        };
+
+        shift+, {
+            bindings = <&kp LS(COMMA)>;
+            key-positions = <30 31>;
+        };
+
+        shift+. {
+            bindings = <&kp LS(PERIOD)>;
+            key-positions = <31 32>;
+        };
+
+        ramda {
+            bindings = <&ramdafn>;
+            key-positions = <5 6>;
+        };
     };
 
     macros {
@@ -48,6 +83,13 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        ramdafn: ramdafn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp SPACE &kp EQUAL &kp GREATER_THAN &kp SPACE &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "RAMDAFN";
         };
     };
 
@@ -96,10 +138,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &kp LS(F6)  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans      &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans      &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                              &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &kp LS(F6)  &trans  &trans  &kp LG(LS(O))  &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans      &trans  &trans  &kp LA(LG(L))  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans      &trans  &trans  &trans         &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
