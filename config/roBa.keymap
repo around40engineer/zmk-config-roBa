@@ -70,6 +70,11 @@
             bindings = <&lambda>;
             key-positions = <6 7>;
         };
+
+        comment {
+            bindings = <&kp LG(SLASH)>;
+            key-positions = <32 33>;
+        };
     };
 
     macros {
@@ -135,7 +140,7 @@
             bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &kp LS(F6)  &trans  &trans  &kp LG(LS(O))  &trans
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans      &trans  &trans  &trans         &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans      &trans  &trans  &trans         &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans      &trans  &trans  &trans         &kp LG(SLASH)
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                     &trans
             >;
 
