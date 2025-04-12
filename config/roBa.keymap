@@ -65,6 +65,11 @@
             bindings = <&kp LESS_THAN>;
             key-positions = <30 31>;
         };
+
+        lambda {
+            bindings = <&lambda>;
+            key-positions = <6 7>;
+        };
     };
 
     macros {
@@ -73,6 +78,13 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        lambda: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp SPACE &kp EQUAL &kp GREATER_THAN &kp SPACE &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "NEW_MACRO";
         };
     };
 
