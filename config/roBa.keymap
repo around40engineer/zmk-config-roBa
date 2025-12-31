@@ -109,10 +109,10 @@
 
         default_layer {
             bindings = <
-&kp Q                &kp W         &kp E          &kp R                       &kp T                                                                &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&mt LEFT_SHIFT A     &kp S         &kp D          &kp F                       &kp G        &mkp MB1                        &kp BACKSPACE           &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
-&mt LEFT_COMMAND Z   &kp X         &kp C          &kp V                       &kp B        &mkp MB2                        &kp SQT                 &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_COMMAND SLASH
-&mt LEFT_ALT ESCAPE  &kp LA(LEFT)  &kp LA(RIGHT)  &mt LEFT_CONTROL LC(SPACE)  &lt 2 SPACE  &lt_to_layer_0 3 LC(SPACE)      &lt_to_layer_0 6 SPACE  &lt 1 ENTER                             &kp RIGHT_ALT
+&kp Q               &kp W         &kp E          &kp R             &kp T                                                                &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&mt LEFT_SHIFT A    &kp S         &kp D          &kp F             &kp G        &mkp MB1                        &kp ESCAPE              &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
+&mt LEFT_COMMAND Z  &kp X         &kp C          &kp V             &kp B        &mkp MB2                        &kp SQT                 &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_COMMAND SLASH
+&kp LEFT_ALT        &kp LA(LEFT)  &kp LA(RIGHT)  &kp LEFT_CONTROL  &lt 2 SPACE  &lt_to_layer_0 3 LC(SPACE)      &lt_to_layer_0 6 SPACE  &lt 1 ENTER                             &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -120,10 +120,10 @@
 
         FUNCTION {
             bindings = <
-&trans                &trans     &trans  &kp LC(LS(R))  &kp LS(LG(T))                                                  &kp LA(LEFT)       &kp LA(UP_ARROW)   &kp LA(DOWN_ARROW)  &kp LA(RIGHT)  &trans
-&trans                &trans     &trans  &kp LS(LG(F))  &kp LC(G)      &kp LS(LA(UP_ARROW))        &kp LC(LA(DELETE))  &kp LEFT           &kp UP_ARROW       &kp DOWN_ARROW      &kp RIGHT      &trans
-&mt LEFT_SHIFT LG(Z)  &kp RG(X)  &trans  &trans         &kp LG(B)      &kp LS(LA(DOWN_ARROW))      &trans              &kp LG(LS(EQUAL))  &kp LS(LG(MINUS))  &trans              &trans         &trans
-&trans                &trans     &trans  &trans         &trans         &trans                      &trans              &trans                                                                   &trans
+&trans                &trans     &trans  &kp LC(LS(R))  &kp LS(LG(T))                                                  &kp LA(LEFT)       &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT)  &trans
+&trans                &trans     &trans  &kp LS(LG(F))  &kp LC(G)      &kp LS(LA(UP_ARROW))        &kp LC(LA(DELETE))  &kp LEFT           &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &trans
+&mt LEFT_SHIFT LG(Z)  &kp RG(X)  &trans  &trans         &kp LG(B)      &kp LS(LA(DOWN_ARROW))      &trans              &kp LG(LS(EQUAL))  &kp LS(LG(MINUS))   &trans            &trans         &trans
+&trans                &trans     &trans  &trans         &trans         &trans                      &trans              &trans                                                                  &trans
             >;
         };
 
@@ -131,7 +131,7 @@
             bindings = <
 &kp LS(LG(NUMBER_4))       &kp N7  &kp N8  &kp N9  &kp LS(LG(V))                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET        &kp AMPERSAND  &kp ASTERISK
 &mt LEFT_SHIFT LS(LG(N5))  &kp N4  &kp N5  &kp N6  &kp LG(V)      &trans      &kp DELETE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH         &kp DOLLAR     &kp PERCENT
-&kp N0                     &kp N1  &kp N2  &kp N3  &kp LG(C)      &trans      &kp GRAVE   &kp EQUAL             &kp MINUS              &kp EXCLAMATION  &kp AT_SIGN    &kp NON_US_BACKSLASH
+&kp N0                     &kp N1  &kp N2  &kp N3  &kp LG(C)      &trans      &kp GRAVE   &kp EQUAL             &kp MINUS              &kp EXCLAMATION  &kp AT_SIGN    &kp BACKSLASH
 &trans                     &trans  &trans  &trans  &trans         &trans      &trans      &trans                                                                       &trans
             >;
         };
